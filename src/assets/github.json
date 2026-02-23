@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "title": "DevTrack",
+    "description": "A productivity dashboard for developers to track tasks, commits, and goals.",
+    "tags": ["React", "Firebase","Vue", "Chart.js", "Finance"],
+    "repolink": "https://github.com/example/devtrack",
+    "demolink": "https://devtrack-demo.vercel.app"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    "title": "ChatSphere",
+    "description": "Real-time chat application with authentication and private rooms.",
+    "tags": ["Node.js", "Socket.io", "MongoDB","JavaScript"],
+    "repolink": "https://github.com/example/chatsphere",
+    "demolink": "https://chatsphere.netlify.app"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "AlgoVisualizer",
+    "description": "Visualize sorting and searching algorithms step by step.",
+    "tags": ["JavaScript", "Algorithms", "Education","React"],
+    "repolink": "https://github.com/example/algovisualizer",
+    "demolink": "https://algovisualizer.vercel.app"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+    "title": "ExpenseX",
+    "description": "Expense tracking web app with charts and monthly reports.",
+    "tags": ["Vue", "Chart.js", "Finance","Node.js",  "MongoDB"],
+    "repolink": "https://github.com/example/expensex",
+    "demolink": "https://expensex-demo.netlify.app"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "title": "SecureAuth",
+    "description": "JWT-based authentication boilerplate with role-based access control.",
+    "tags": ["Express", "JWT", "Security","React"],
+    "repolink": "https://github.com/example/secureauth",
+    "demolink": "https://secureauth-demo.onrender.com"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "title": "PortfolioForge",
+    "description": "Customizable developer portfolio builder with themes.",
+    "tags": ["Next.js", "Tailwind", "Portfolio", "Algorithms"],
+    "repolink": "https://github.com/example/portfolioforge",
+    "demolink": "https://portfolioforge.vercel.app"
+  }
+]

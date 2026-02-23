@@ -1,0 +1,227 @@
+# 🧠 Developer Notes
+### DSA & Full-Stack Engineering
+
+---
+
+## 🌱 Developer Mindset
+
+- Think in **logic**, not frameworks  
+- Write code for **humans first**, machines second  
+- Type safety prevents future pain  
+- UI can’t compensate for bad logic  
+
+---
+
+## 🧰 Tech Stack Snapshot
+
+### Languages
+- TypeScript  
+- JavaScript  
+
+### Frontend
+- React  
+- Next.js  
+
+### Backend
+- Node.js  
+- Express  
+
+### Database
+- MongoDB  
+- PostgreSQL  
+
+### Tools
+- Git  
+- REST APIs  
+- JWT  
+- Docker (basics)  
+
+---
+
+## ✨ TypeScript Essentials
+
+### Basic Types
+
+```ts
+let id: number = 1;
+let username: string = "dev";
+let isActive: boolean = true;
+Common Types
+
+number
+
+string
+
+boolean
+
+unknown (preferred)
+
+any (avoid)
+
+Functions
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+Arrow syntax:
+
+const multiply = (a: number, b: number): number => a * b;
+Interface vs Type
+
+Interface → object shape
+
+interface User {
+  id: number;
+  name: string;
+}
+
+Type → unions & aliases
+
+type Status = "success" | "error" | "loading";
+
+Rule of thumb:
+
+Objects → interface
+
+Unions → type
+
+Generics (Important)
+function identity<T>(value: T): T {
+  return value;
+}
+
+If generics feel scary → revisit fundamentals.
+
+🧩 DSA Foundations
+Time Complexity
+
+O(1) → constant
+
+O(log n) → binary search
+
+O(n) → linear scan
+
+O(n log n) → sorting
+
+O(n²) → danger zone
+
+Array
+
+Fast access
+
+Fixed order
+
+Costly insert/delete
+
+Stack (LIFO)
+
+Use cases:
+
+Undo / Redo
+
+Function calls
+
+Expression evaluation
+
+class Stack<T> {
+  private items: T[] = [];
+
+  push(value: T) {
+    this.items.push(value);
+  }
+
+  pop(): T | undefined {
+    return this.items.pop();
+  }
+}
+Queue (FIFO)
+
+Use cases:
+
+Scheduling
+
+BFS
+
+Task pipelines
+
+Binary Search
+
+Condition: array must be sorted
+
+function binarySearch(arr: number[], target: number): number {
+  let left = 0, right = arr.length - 1;
+
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+
+    if (arr[mid] === target) return mid;
+    arr[mid] < target ? left = mid + 1 : right = mid - 1;
+  }
+
+  return -1;
+}
+
+Time complexity: O(log n)
+
+Hashing
+
+Key → Value mapping
+
+Average time → O(1)
+
+Used in frequency counting, Two Sum
+
+const map = new Map<number, number>();
+Two Sum Pattern
+function twoSum(nums: number[], target: number): number[] {
+  const map = new Map<number, number>();
+
+  for (let i = 0; i < nums.length; i++) {
+    const need = target - nums[i];
+    if (map.has(need)) return [map.get(need)!, i];
+    map.set(nums[i], i);
+  }
+
+  return [];
+}
+🔌 Backend Notes (Node + Express)
+import { Request, Response } from "express";
+
+const handler = (req: Request, res: Response) => {
+  res.status(200).json({ message: "OK" });
+};
+REST Basics
+
+GET → fetch
+
+POST → create
+
+PUT / PATCH → update
+
+DELETE → remove
+
+🎨 Frontend Notes (React)
+Typed Props
+type Props = {
+  title: string;
+};
+
+const Header = ({ title }: Props) => {
+  return <h1>{title}</h1>;
+};
+
+State rules:
+
+Keep state minimal
+
+Avoid derived state
+
+Lift only when required
+
+🧪 Git Discipline
+
+Small, meaningful commits
+
+Never push secrets
+
+Pull before push

@@ -1,9 +1,11 @@
 .window{
-    height: 500px;
-    width: 700px;
+    height: 100%;
     background-color: black;
     border-radius: .85rem;
     overflow: hidden;
+    color: rgba(255, 255, 255, 0.819);
+    display: flex;
+    flex-direction: column;
     .nav{
         background-color: #ffffff21;
         padding-inline:1rem;
@@ -11,7 +13,7 @@
         display: flex;
         align-items: center;
         gap: 1.5rem;
-        color: rgba(255, 255, 255, 0.819);
+        
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 500;
         .dots{
@@ -25,6 +27,7 @@
             }
             .red{
                 background-color: rgb(220, 20, 70);
+                cursor: pointer;
             }
             .yellow{
                 background-color: rgb(255, 230, 0);
@@ -34,5 +37,17 @@
             }
         }
         
+    }
+    .main-content {
+        flex: 1;
+        overflow: auto;
+    }
+    *::-webkit-scrollbar{
+        width: 10px;
+        height: 10px;
+    }
+    *::-webkit-scrollbar-thumb{
+        background-color: rgba(168,168,168,.4);
+        border-radius: 4px;
     }
 }
